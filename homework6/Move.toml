@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-move_asset = "0xe1b6909b821c879c646d60fe5907783b75a3c3d6947eea57928842c136a68f52"
+move_asset = "0x2c9e1d3a09f7744c0fd5ddad355890d11b5d687dfd55bc75c487f6a28bad8ae8"
 
 [dev-addresses]
 

@@ -9,19 +9,19 @@ struct TokenAsset has key {
 
 
 
-public entry fun create_Asset(account : &signer) {
+public entry fun create_Asset(account : &signer, token_value: u64) {
 // create a TokenAsset 
-let token_asset = create();
+let token_asset = create(token_value);
 
 // move the TokenAsset to the account address 
 move_to(account, token_asset);
 
 }
 
-fun create() : TokenAsset {
-// return a Token Asset with 0 value
+fun create(token_value: u64) : TokenAsset {
+
 TokenAsset {
-    value: 0
+    value: token_value
 }
 
 }
