@@ -18,7 +18,6 @@ move_to(account, token_asset);
 
 }
 
-
 fun create() : TokenAsset {
 // return a Token Asset with 0 value
 TokenAsset {
