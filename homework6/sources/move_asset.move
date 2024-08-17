@@ -27,6 +27,13 @@ TokenAsset {
 
 }
 
+#[view]
+
+public fun view_asset_value(account: address) : u64 acquires TokenAsset { 
+    borrow_global<TokenAsset>(account).value
+    
+}
+
   #[test_only]
     public fun get_value(token: &TokenAsset): u64 {
         token.value
