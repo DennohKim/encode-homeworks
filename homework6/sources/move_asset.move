@@ -28,7 +28,7 @@ TokenAsset {
 
 #[view]
 
-public fun view_asset_value(account: address) : u64 acquires TokenAsset { 
+public fun view_asset_value(account: &signer) : u64 acquires TokenAsset { 
     borrow_global<TokenAsset>(account).value
     
 }

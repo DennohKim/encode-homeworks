@@ -1,0 +1,16 @@
+[package]
+name = "nft_collection"
+version = "1.0.0"
+authors = []
+
+[addresses]
+nft_collection = "0x67af43ef51faba2db9145757e480b63551d1f9b9755097be2eeb2eac7edd73e9"
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
